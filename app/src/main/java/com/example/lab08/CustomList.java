@@ -18,6 +18,13 @@ public class CustomList {
         return cities.contains(city);
     }
 
+    public void deleteCity(City city) {
+        if (cities.contains(city)) {
+            cities.remove(city);
+        } else {
+            throw new IllegalArgumentException();
+        }
+    }
 
 
 
